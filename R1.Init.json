@@ -1,0 +1,130 @@
+{
+  "sysAppData": {
+    "editions": {
+      "sessionInitConfig": "R1.Init.Session",
+      "helpUrl": "https://goto.plexearth.com/pe26-lite/plugin/help",
+      "downloadUrl": "https://goto.plexearth.com/pe26-lite/plugin/download",
+      "pricingUrl": "https://goto.plexearth.com/pe26-lite/plugin/pricing",
+      "hasSplashScreen": "true",
+      "canSwitchEdition": "true"
+    },
+    "cui": {
+      "isAvailable": "true",
+      "mainRbnTabId": "ID_TAB_PXEARTH",
+      "ribbonTabs": {
+        "ID_TAB_PXEARTH": {
+          "name": "Plex-Earth Lite",
+          "panels": {
+            "PXID_PANEL_SESSION": {
+              "isVisible": "true",
+              "isEnabled": "true"
+            },
+            "PXID_PANEL_CONTEXTUAL_DATA_LITE": {
+              "isVisible": "true",
+              "isEnabled": "false"
+            },
+            "PXID_PANEL_GE_LITE": {
+              "isVisible": "true",
+              "isEnabled": "false"
+            },
+            "PXID_PANEL_RASTER_TOOLS_LITE": {
+              "isVisible": "true",
+              "isEnabled": "false"
+            },
+            "PXID_PANEL_SERVICE_NOSESS_LITE": {
+              "isVisible": "true",
+              "isEnabled": "true"
+            }
+          }
+        }
+      },
+      "helpUrl": "https://goto.plexearth.com/pe26-lite/plugin/help",
+      "downloadUrl": "https://goto.plexearth.com/pe26-lite/plugin/download"
+    }
+  },
+  "sysVars": {},
+  "sysStrings": {},
+  "sysConstants": {
+    "[$URL_GLOBAL_CDN]": "https://pe26-v-app-cdn.plexearth360.com",
+    "[$URL_ROOT_CDN]": "[$.]/cdn",
+    "[$URL_ROOT_GOTO]": "https://goto.plexearth.com",
+    "[$URL_PAGE_GOTO_PLUGIN]": "[$URL_ROOT_GOTO]/[$PROD_REF]/plugin",
+    "[$URL_PAGE_HELP]": "[$URL_PAGE_GOTO_PLUGIN]/help",
+    "[$URL_PAGE_WHATSNEW]": "[$URL_PAGE_GOTO_PLUGIN]/whatsnew",
+    "[$URL_PAGE_ADDCREDITS]": "[$URL_PAGE_GOTO_PLUGIN]/addcredits",
+    "[$URL_PAGE_DOWNLOAD]": "[$URL_PAGE_GOTO_PLUGIN]/download",
+    "[$URL_PAGE_WELCOME_LEARNMORE]": "[$URL_PAGE_GOTO_PLUGIN]/welcome",
+    "[$URL_PAGE_PRICING]": "[$URL_PAGE_GOTO_PLUGIN]/pricing",
+    "[$URL_PAGE_UPGRADE]": "[$URL_PAGE_GOTO_PLUGIN]/upgrade",
+    "[$URL_PAGE_CONTACT_SALES]": "[$URL_PAGE_GOTO_PLUGIN]/sales",
+    "[$URL_PAGE_CONTACT_SUPPORT]": "[$URL_PAGE_GOTO_PLUGIN]/support",
+    "[$URL_PRODUCT]": "[$URL_PAGE_GOTO_PLUGIN]/website",
+    "[$EMAIL_SUPPORT]": "mailto:support@plexscape.com",
+    "[$PROD_NAME]": "Plex-Earth Lite",
+    "[$PROD_VAR]": "LITE",
+    "[$PROD_REF]": "pe26-lite"
+  },
+  "sysConditionSets": {},
+  "sysSelections": {},
+  "sysCommands": {},
+  "sysCommandLimitSets": {},
+  "sysNamedActions": {},
+  "sysNamedFuncs": {},
+  "sysCampaigns": {},
+  "sysNotifs": {
+    "onLiteActivationSuccessMessage": {
+      "type": "dialog",
+      "isModal": "true",
+      "content": "Plex-Earth Lite has been activated successfully!",
+      "btnRight": {
+        "text": "Start!",
+        "backClr": "#000",
+        "foreClr": "#FFF",
+        "dlgRes": "true"
+      },
+      "title": "Welcome to Plex-Earth Lite!"
+    },
+    "onLiteSubscriptionExpiredMessage": {
+      "type": "dialog",
+      "isModal": "true",
+      "content": "<Grid VerticalAlignment='Center' MaxWidth='900'><TextBlock><Image Width='900' Source=''/></TextBlock><StackPanel><DockPanel Margin='24'><DockPanel.Background><SolidColorBrush Color='#101010' Opacity='0.9'/></DockPanel.Background><StackPanel Margin='24'><TextBlock Style='{DynamicResource H2}' Foreground='#FFF' TextWrapping='Wrap'>Your Subscription Has Expired – Renew Now!</TextBlock><TextBlock Style='{DynamicResource H4}' Foreground='#FFF' TextWrapping='Wrap'>Keep up with your competitive advantage!</TextBlock><TextBlock Style='{DynamicResource H4}' Foreground='#FFF'><Run>Need assistance or more information?&#160; </Run><Hyperlink Foreground='#DD6B45' NavigateUri='[$URL_PAGE_CONTACT_SUPPORT]'>Contact Support</Hyperlink></TextBlock></StackPanel></DockPanel></StackPanel></Grid>",
+      "btnLeft": {
+        "text": "Renew now!",
+        "backClr": "#000",
+        "foreClr": "#FFF",
+        "action": {
+          "type": "gotoUrl",
+          "url": "[$URL_PAGE_UPGRADE]?utm_source=[$HOST_PLATFORM_REF]-[$PROD_REF]&utm_medium=in_app_message&utm_term=on_lite_expired&utm_campaign=upgrade&wky=[$wky]"
+        }
+      },
+      "btnRight": {
+        "text": "Close",
+        "dlgRes": "false"
+      },
+      "btnAction": {
+        "text": "I already have an Activation Code",
+        "backClr": "#F5F5F5",
+        "foreClr": "#101010",
+        "action": {
+          "type": "custom",
+          "customData": "{\"type\":\"sendStringToExecute\",\"cmd\":\".PXV_ACTIVATE_CODE\\n\"}"
+        },
+        "dlgRes": "true",
+        "runAfterDlg": "true"
+      }
+    },
+    "onTrialSuccessMessage_Lite": {
+      "type": "dialog",
+      "isModal": "true",
+      "content": "Your Plex-Earth Lite has just started!",
+      "btnRight": {
+        "text": "Start!",
+        "backClr": "#000",
+        "foreClr": "#FFF",
+        "dlgRes": "true"
+      },
+      "title": "Welcome to Plex-Earth Lite!"
+    }
+  },
+  "sysRefs": {}
+}

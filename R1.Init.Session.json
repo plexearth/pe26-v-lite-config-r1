@@ -1,0 +1,54 @@
+{
+  "sysAppData": {
+    "versionConfigs": {
+      "26": {
+        "repoUrl": "https://pe26-v-lite-config-r1.plexearth360.com",
+        "earthDataUrl": "https://plexdeliverynetwork.blob.core.windows.net/public/csList.v014.2024-09-18.json",
+        "file": "R1.VersionCustomizations"
+      }
+    }
+  },
+  "sysVars": {
+    "HAS_PREMIUM": "false",
+    "HAS_QUICKVIEWS": "true",
+    "HAS_TIMEVIEWS": "false",
+    "HAS_IMAGERY": "false",
+    "HAS_TERRAIN": "false",
+    "HAS_GEOTIFF": "false",
+    "HAS_POI": "true",
+    "HAS_SITE_AREAS": "false",
+    "HAS_GOOGLE_EARTH_IMAGES": "false",
+    "HAS_GOOGLE_EARTH_TOOLS": "true",
+    "HAS_KML": "false",
+    "HAS_PHOTOS": "true",
+    "HAS_RASTER": "true",
+    "HAS_RASTER_ADVANCED": "false",
+    "HAS_CUI": "true",
+    "CAN_EDIT": "false",
+    "CAN_PRINT": "false",
+    "CAN_PRINT_TIMELINE": "false",
+    "CAN_CUSTOM_MAPS": "false",
+    "CAN_QUICKVIEW_TO_RASTER": "false",
+    "CAN_CREATE_IMAGERY_MOSAIC": "false",
+    "CAN_CREATE_IMAGERY_RASTER": "false",
+    "CAN_CREATE_IMAGERY_TIMELINE": "false",
+    "CAN_INSERT_SURFACE_OBJECTS": "false",
+    "CAN_POLYGONAL_AREAS": "false",
+    "VARTAG_AIRBUS_CAN_PRINT": "false",
+    "VARTAG_NEARMAP_ZOOM_MAX": "",
+    "VARTAG_NEARMAP_ZOOM_MIN": "",
+    "VARTAG_NEARMAP_CUSTOM_KEY": "false",
+    "VARTAG_GOOGLE_MAPS_ZOOM_MAX": "21"
+  },
+  "sysStrings": {},
+  "sysConstants": {},
+  "sysConditionSets": {},
+  "sysSelections": {},
+  "sysCommands": {},
+  "sysCommandLimitSets": {},
+  "sysNamedActions": {},
+  "sysNamedFuncs": {},
+  "sysCampaigns": {},
+  "sysNotifs": {},
+  "sysRefs": {}
+}
